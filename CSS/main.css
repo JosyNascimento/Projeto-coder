@@ -1,0 +1,19 @@
+.header {
+    color: aqua;
+    align-content: center;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 0;
+    position: sticky;
+}
+.body {
+    padding-left: 20px;
+}
+
+.footer {
+    color: yellow;
+    background-color: red;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
