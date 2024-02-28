@@ -46,6 +46,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
     color: white;
+    padding-left: 30px;
 }
 
 .carrossel {
@@ -110,6 +111,11 @@
     border-radius: 5px;
     background-color: burlywood;
     color: maroon;
+    font-size: 18px;
+    
+}
+.btn:hover{
+    background-color: #02A659;
 }
 
 .footer {
