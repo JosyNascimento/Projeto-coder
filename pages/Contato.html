@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário e Newsletter</title>
    
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/main.css">
 
 </head>
@@ -24,9 +25,10 @@
 <!-- Seção 1: Descubra como a Fritura Inteligente pode elevar o desempenho -->
 <section>
     <div>
-        <h2>Descubra como a BioSpark pode elevar a sua operação de Gestão de Resíduos.</h2>
+        <h1>Descubra como a BioSpark pode elevar a sua operação de Gestão de Resíduos.</h1>
+        <h2>Formulário de contato</h2>
     </div>
-    <div id="form-home">
+    <div class="form-box">
         <form class="elementor-form" method="post" name="New Form">
             <!-- Campos do formulário -->
             <input type="hidden" name="post_id" value="12"/>
@@ -63,7 +65,7 @@
                 </select>
             </div>
             <div>
-                <label for="form-field-field_73eafa4">Tipos de Fritadeira:*</label>
+                <label for="form-field-field_73eafa4">Tipos de Solução:*</label>
                 <select name="form_fields[field_73eafa4]" id="form-field-field_73eafa4" required>
                     <option value="Escolha o tipo de fritadeira...">Escolha o tipo de Solução</option>
                     <option value="LixeiraMagica">Lixeira Mágica</option>
@@ -72,7 +74,7 @@
                 </select>
             </div>
             <div>
-                <label for="form-field-message">Mensagem</label>
+                <label for="form-field-message">Mensagem</label><br>
                 <textarea name="form_fields[message]" id="form-field-message" rows="4" placeholder="Mensagem..."></textarea>
             </div>
             <div>
@@ -92,14 +94,16 @@
         <h2>Newsletter</h2>
         <p>Assine nossa newsletter, receba nossas principais notícias e acompanhe o nosso trabalho.</p>
     </div>
-    <div>
+    <div class="form-box">
         <form class="elementor-form" method="post" name="Novo formulário" novalidate>
             <div>
                 <input type="email" name="form_fields[email]" id="form-field-email" placeholder="E-mail" required>
+                <p></p>
+                
             </div>
             <div>
-                <label for="form-field-message">Mensagem</label>
-                <textarea name="form_fields[message]" id="form-field-message" rows="4" placeholder="Mensagem..."></textarea>
+               
+               
             </div>
             <div>
                 <button type="submit">Enviar</button>
