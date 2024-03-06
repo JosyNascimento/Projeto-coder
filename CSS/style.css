@@ -9,12 +9,18 @@ box-sizing: border-box;
     --cor-primaria:#ffffff;
 }
 
-.menu-nav{
+.nav {
+    top: 0;
+    position: sticky;
     display: flex;
-    max-width: 1080px;
     align-items: center;
-    justify-content: center;
-    font-size: 30px;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 header, footer{
@@ -77,17 +83,4 @@ text-align: center;
 
 .dp-menu ul ul li a {
     display: block;
-}
-.nav {
-    top: 0;
-    position: sticky;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
 }
