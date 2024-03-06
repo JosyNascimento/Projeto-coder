@@ -1,15 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Entre em contato com a SustentAção e participe das nossas atividades">
-    <meta name="keywords" content="sustentabilidade, email, telefone, Instagram">
-    <title>Contato</title>
+    <title>Formulário e Newsletter</title>
+    <!-- Estilos -->
+    <style>
+        /* Estilos específicos podem ser adicionados aqui */
+    </style>
 </head>
-<nav> <a href="Produtos.html">Produtos</a> - <a href="Quem-somos.html">Quem Somos</a> - <a href="Contato.html">Contato</a> - <a href="../index.html">Index</a></nav>
-
 <body>
-    
+
+<!-- Seção 1: Descubra como a Fritura Inteligente pode elevar o desempenho -->
+<section>
+    <div>
+        <h2>Descubra como a Fritura Inteligente pode elevar o desempenho da sua operação de foodservice.</h2>
+    </div>
+    <div id="form-home">
+        <form class="elementor-form" method="post" name="New Form">
+            <!-- Campos do formulário -->
+            <input type="hidden" name="post_id" value="12"/>
+            <input type="hidden" name="form_id" value="5132217"/>
+            <input type="hidden" name="referer_title" value="Gestão e Qualidade do seu Óleo com The Oil Guy"/>
+            <input type="hidden" name="queried_id" value="12"/>
+
+            <div>
+                <label for="form-field-name">Nome:*</label>
+                <input type="text" name="form_fields[name]" id="form-field-name" required>
+            </div>
+            <div>
+                <label for="form-field-email">Email:*</label>
+                <input type="email" name="form_fields[email]" id="form-field-email" required>
+            </div>
+            <div>
+                <label for="form-field-field_cd5fbd0">Empresa:*</label>
+                <textarea name="form_fields[field_cd5fbd0]" id="form-field-field_cd5fbd0" required></textarea>
+            </div>
+            <div>
+                <label for="form-field-field_54e0cd3">Telefone para contato:*</label>
+                <input type="tel" name="form_fields[field_54e0cd3]" id="form-field-field_54e0cd3" required pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted.">
+            </div>
+            <div>
+                <label for="form-field-field_f95189c">Setor:*</label>
+                <select name="form_fields[field_f95189c]" id="form-field-field_f95189c" required>
+                    <option value="Escolha o setor...">Escolha o setor...</option>
+                    <option value="Hotel">Hotel</option>
+                    <option value="Restaurante">Restaurante</option>
+                    <!-- Adicione outras opções conforme necessário -->
+                </select>
+            </div>
+            <div>
+                <label for="form-field-field_73eafa4">Tipos de Fritadeira:*</label>
+                <select name="form_fields[field_73eafa4]" id="form-field-field_73eafa4" required>
+                    <option value="Escolha o tipo de fritadeira...">Escolha o tipo de fritadeira...</option>
+                    <option value="Elétrica">Elétrica</option>
+                    <option value="Gás">Gás</option>
+                    <!-- Adicione outras opções conforme necessário -->
+                </select>
+            </div>
+            <div>
+                <label for="form-field-message">Mensagem</label>
+                <textarea name="form_fields[message]" id="form-field-message" rows="4" placeholder="Mensagem..."></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="form-field-field_fe0c1c2-0" name="form_fields[field_fe0c1c2]" required>
+                <label for="form-field-field_fe0c1c2-0">De acordo com a Lei de Proteção de Dados, processamos seus dados fornecidos a fim de gerir o seu pedido. Com o seu consentimento prévio, iremos informá-lo sobre as nossas atividades e produtos. Para mais informações sobre como estamos utilizando seus dados, contate-nos.</label>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Seção 2: Newsletter -->
+<section>
+    <div>
+        <h2>Newsletter</h2>
+        <p>Assine nossa newsletter, receba nossas principais notícias e acompanhe o nosso trabalho.</p>
+    </div>
+    <div>
+        <form class="elementor-form" method="post" name="Novo formulário" novalidate>
+            <div>
+                <input type="email" name="form_fields[email]" id="form-field-email" placeholder="E-mail" required>
+            </div>
+            <div>
+                <label for="form-field-message">Mensagem</label>
+                <textarea name="form_fields[message]" id="form-field-message" rows="4" placeholder="Mensagem..."></textarea>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</section>
+
 </body>
 </html>
