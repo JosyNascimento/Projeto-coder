@@ -31,7 +31,7 @@ nav {
 .hero {
 
     height: 600px;
-    background-image: url('/img/Hero_home.webp');
+    background-image: url('../img/Hero_home.webp');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
