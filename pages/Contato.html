@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/main.css">
 
 </head>
@@ -21,93 +22,94 @@
     </div>
     <script src="../JS/main.js"></script> <!-- efeito que muda a cor do menu -->
 </nav>
+
 <body>
-   
-<!-- Seção 1: Descubra como a Fritura Inteligente pode elevar o desempenho -->
-<section>
-    <div>
-        <h1>Descubra como a BioSpark pode elevar a sua operação de Gestão de Resíduos.</h1>
-        <h2>Formulário de contato</h2>
-    </div>
-    <div class="form-box">
-        <form class="elementor-form" method="post" name="New Form">
-            <!-- Campos do formulário -->
 
-            <div>
-                <label for="form-field-name">Nome:*</label>
-                <input type="text" name="form_fields[name]" id="form-field-name" required>
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h1>Descubra como a BioSpark pode elevar a sua operação de Gestão de Resíduos.</h1>
+                <h2>Formulário de contato</h2>
             </div>
-            <div>
-                <label for="form-field-email">Email:*</label>
-                <input type="email" name="form_fields[email]" id="form-field-email" required>
+            <div class="col-12 form-box">
+                <form class="elementor-form" method="post" name="New Form">
+                    <div class="form-group">
+                        <label for="form-field-name">Nome:*</label>
+                        <input type="text" class="form-control" name="form_fields[name]" id="form-field-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-field-email">Email:*</label>
+                        <input type="email" class="form-control" name="form_fields[email]" id="form-field-email"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="empresa">Empresa:*</label>
+                        <textarea class="form-control" name="Empresa" id="empresa" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-field-field_54e0cd3">Telefone para contato:*</label>
+                        <input type="tel" class="form-control" name="form_fields[field_54e0cd3]"
+                            id="form-field-field_54e0cd3" required pattern="[0-9()#&+*-=.]+"
+                            title="Only numbers and phone characters (#, -, *, etc) are accepted.">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-field-field_f95189c">Setor:*</label>
+                        <select class="form-control" name="form_fields[field_f95189c]" id="form-field-field_f95189c"
+                            required>
+                            <option value="Escolha o setor...">Escolha o setor...</option>
+                            <option value="Comercio">Comércio</option>
+                            <option value="Industria">Indústria</option>
+                            <option value="ONG">ONG</option>
+                            <option value="setorpublico">Setor Público</option>
+                            <option value="Individual">Pessoa Física</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-field-field_73eafa4">Tipos de Solução:*</label>
+                        <select class="form-control" name="form_fields[field_73eafa4]" id="form-field-field_73eafa4"
+                            required>
+                            <option value="Escolha o tipo de solução...">Escolha o tipo de Solução</option>
+                            <option value="LixeiraMagica">Lixeira Mágica</option>
+                            <option value="Consultoria">Consultoria</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-field-message">Mensagem</label><br>
+                        <textarea class="form-control" name="form_fields[message]" id="form-field-message" rows="4"
+                            placeholder="Mensagem..."></textarea>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input" id="form-field-field_fe0c1c2-0"
+                            name="form_fields[field_fe0c1c2]" required>
+                        <label class="form-check-label" for="form-field-field_fe0c1c2-0">De acordo com a Lei de Proteção
+                            de Dados...</label>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
             </div>
-            <div>
-                <label for="form-field-field_cd5fbd0">Empresa:*</label>
-                <textarea name="form_fields[field_cd5fbd0]" id="form-field-field_cd5fbd0" required></textarea>
+        </div>
+    </section>
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h2>Newsletter</h2>
+                <p>Assine nossa newsletter, receba nossas principais notícias e acompanhe o nosso trabalho.</p>
             </div>
-            <div>
-                <label for="form-field-field_54e0cd3">Telefone para contato:*</label>
-                <input type="tel" name="form_fields[field_54e0cd3]" id="form-field-field_54e0cd3" required pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted.">
+            <div class="col-12 form-box">
+                <form class="elementor-form" method="post" name="Novo formulário" novalidate>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="form_fields[email]" id="form-field-email"
+                            placeholder="E-mail" required>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
             </div>
-            <div>
-                <label for="form-field-field_f95189c">Setor:*</label>
-                <select name="form_fields[field_f95189c]" id="form-field-field_f95189c" required>
-                    <option value="Escolha o setor...">Escolha o setor...</option>
-                    <option value="Comercio">Comércio</option>
-                    <option value="Industria">Indústria</option>
-                    <option value="ONG">ONG</option>
-                    <option value="setorpublico">Setor Público</option>
-                    <option value="Individual">Pessoa Física</option>
-                    <!-- Adicione outras opções conforme necessário -->
-                </select>
-            </div>
-            <div>
-                <label for="form-field-field_73eafa4">Tipos de Solução:*</label>
-                <select name="form_fields[field_73eafa4]" id="form-field-field_73eafa4" required>
-                    <option value="Escolha o tipo de fritadeira...">Escolha o tipo de Solução</option>
-                    <option value="LixeiraMagica">Lixeira Mágica</option>
-                    <option value="Consultoria">Consultoria</option>
-                    <!-- Adicione outras opções conforme necessário -->
-                </select>
-            </div>
-            <div>
-                <label for="form-field-message">Mensagem</label><br>
-                <textarea name="form_fields[message]" id="form-field-message" rows="4" placeholder="Mensagem..."></textarea>
-            </div>
-            <div>
-                <input type="checkbox" id="form-field-field_fe0c1c2-0" name="form_fields[field_fe0c1c2]" required>
-                <label for="form-field-field_fe0c1c2-0">De acordo com a Lei de Proteção de Dados, processamos seus dados fornecidos a fim de gerir o seu pedido. Com o seu consentimento prévio, iremos informá-lo sobre as nossas atividades e produtos. Para mais informações sobre como estamos utilizando seus dados, contate-nos.</label>
-            </div>
-            <div>
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
-    </div>
-</section>
-
-<!-- Seção 2: Newsletter -->
-<section>
-    <div>
-        <h2>Newsletter</h2>
-        <p>Assine nossa newsletter, receba nossas principais notícias e acompanhe o nosso trabalho.</p>
-    </div>
-    <div class="form-box">
-        <form class="elementor-form" method="post" name="Novo formulário" novalidate>
-            <div>
-                <input type="email" name="form_fields[email]" id="form-field-email" placeholder="E-mail" required>
-                <p></p>
-                
-            </div>
-            <div>
-               
-               
-            </div>
-            <div>
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
-    </div>
-</section>
-
+        </div>
+        
+    </section>
+    Newsletter Form with Bootstrap
 </body>
-</html>

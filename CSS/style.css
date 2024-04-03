@@ -1,12 +1,12 @@
-*{
-margin: 0 auto;
-padding: 0;
-box-sizing: border-box;
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-   :root {
+:root {
     --cor-hover: #02A659;
-    --cor-primaria:#ffffff;
+    --cor-primaria: #ffffff;
 }
 
 .nav {
@@ -19,9 +19,9 @@ box-sizing: border-box;
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+
 }
+
 .links a {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -29,17 +29,18 @@ box-sizing: border-box;
 
 }
 
-header, footer{
+header,
+footer {
     background-color: #124A43;
     width: 100%;
     padding: 13.9px;
 }
 
-footer p{
+footer p {
 
-color: #ffffff;
-font-size: 20px;
-text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
 
 }
 
@@ -48,7 +49,7 @@ text-align: center;
     width: 100%;
     list-style-type: none;
     padding: 0;
-    
+
 }
 
 .dp-menu ul {
@@ -90,16 +91,24 @@ text-align: center;
 .dp-menu ul ul li a {
     display: block;
 }
+
 .form-box {
-    border: 1px solid #ccc; /* Borda da caixa */
-    border-radius: 5px; /* Borda arredondada */
-    padding: 20px; /* Espaçamento interno */
-    background-color: #f9f9f9; /* Cor de fundo */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    border: 1px solid #ccc;
+    /* Borda da caixa */
+    border-radius: 5px;
+    /* Borda arredondada */
+    padding: 20px;
+    /* Espaçamento interno */
+    background-color: #f9f9f9;
+    /* Cor de fundo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra */
     width: 30%;
 }
 
 .form-box h2 {
-    margin-top: 0; /* Remova a margem superior do título */
-    font-size: 24px; /* Tamanho da fonte do título */
+    margin-top: 0;
+    /* Remova a margem superior do título */
+    font-size: 24px;
+    /* Tamanho da fonte do título */
 }

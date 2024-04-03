@@ -1,15 +1,12 @@
-.header {
-    color: red;
-
-    justify-content: space-around;
-    padding-left: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-
+h2{
+font-size: 40px;
+text-align: center;
+}
+h3{
+font-size: 30px;
 }
 
-.nav {
+nav {
     top: 0;
     position: sticky;
     display: flex;
@@ -30,33 +27,25 @@
 
 }
 
-.body {
-    padding-left: 20px;
-}
-
 .hero {
-    width: auto;
-    background-image: url(../img/Hero_home.webp);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 720px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 48px;
-    color: white;
-    padding-left: 30px;
-}
+    
+        height: 600px; 
+        background-image: url('/img/Hero_home.webp');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
 
 .carrossel {
     position: relative;
     min-height: 250px;
-    max-width: 800px;
+    min-width: 300px;
     margin: auto;
     overflow: auto;
-    background-color:#02A659;
+    background-color: #124A43;
     padding: 20px;
+    border-radius: 30px;
 }
 
 .carrossel-items .item {
@@ -64,34 +53,40 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    width: 278px;
+    height: 278px;
     /* Certifique-se de que cada item ocupe todo o contêiner */
     margin-left: 20px;
+    margin-right: 20px;
     text-align: center;
     border: solid 2px green;
     border-radius: 8px;
-    background-color:#fff;
-    
+    background-color: #fff;
+    padding: 15px;
+
 }
 
 .carrossel-items {
     display: flex;
-    
+
 }
+
 .carrossel-imagem {
-    background-color: white; /* A aura branca */
+    background-color: white;
+    /* A aura branca */
     display: inline-block;
     padding: 10px;
-    box-shadow: 0 0 3px rgba(0,0,0,0.1); /* Um toque de magia para destacar (opcional) */
 }
+
 .carrossel-imagem img {
-    display: block; /* Remove espaços indesejados abaixo da imagem */
-    
-    width: 100px; /* Ou a largura desejada */
-    height: 100px; /* Ou a altura desejada, mantenha igual à largura para um círculo perfeito */
-    border-radius: 50%; /* A magia que cria o círculo */
+    display: block;
+    width: 100px;
+    /* Manter altura e largura igual */
+    height: 100px;
+    border-radius: 50%;
+    /* A magia que cria o círculo */
 }
+
 .anterior,
 .proximo {
     position: absolute;
@@ -102,19 +97,21 @@
 
 .anterior {
     left: 10px;
-    }
+}
 
 .proximo {
     right: 10px;
 }
+
 .btn {
     border-radius: 5px;
     background-color: burlywood;
     color: maroon;
     font-size: 18px;
-    
+
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #02A659;
 }
 
@@ -125,4 +122,70 @@
     padding-bottom: 20px;
     padding-left: 20px;
     margin-top: 40px;
+}
+
+
+
+.divisoria {
+    display: flex;
+    flex-direction: column;
+        text-align: center;
+
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 2em;
+}
+
+.image {
+    flex: 1;
+    max-width: 50%;
+    object-fit: cover;
+}
+
+.text-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding: 15px;
+    margin-left: 80px;
+}
+
+.text-box {
+    background: #f0f0f0;
+    border-radius: 15px;
+    margin: 15px 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text-boxes {
+        padding: 0;
+    }
+
+    .text-box {
+        margin: 15px 0;
+    }
+
+  
 }
