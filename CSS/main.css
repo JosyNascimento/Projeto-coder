@@ -1,9 +1,10 @@
-h2{
-font-size: 40px;
-text-align: center;
+h2 {
+    font-size: 40px;
+    text-align: center;
 }
-h3{
-font-size: 30px;
+
+h3 {
+    font-size: 30px;
 }
 
 nav {
@@ -28,14 +29,14 @@ nav {
 }
 
 .hero {
-    
-        height: 600px; 
-        background-image: url('/img/Hero_home.webp');
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
+
+    height: 600px;
+    background-image: url('/img/Hero_home.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .carrossel {
     position: relative;
@@ -129,7 +130,7 @@ nav {
 .divisoria {
     display: flex;
     flex-direction: column;
-        text-align: center;
+    text-align: center;
 
 }
 
@@ -168,6 +169,45 @@ nav {
     padding: 20px;
 }
 
+/* testes de grid */
+
+.contraIndicacoes-grid {
+    display: grid;
+    grid-template-columns: 1fr 15fr 1fr 15fr;
+    row-gap: 20px;
+    align-items: center;
+
+}
+
+.contra-imagem {
+    grid-column: span 1;
+
+}
+
+.contra-texto {
+    grid-column: span 1;
+    background: #f0f0f0;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 30px
+    
+}
+.instrucao-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    row-gap: 10px;
+
+}
+.instrucao-texto {
+    grid-column: span 1;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 30px
+    
+}
+
 @media (max-width: 768px) {
     .conteudo {
         flex-direction: column;
@@ -187,5 +227,9 @@ nav {
         margin: 15px 0;
     }
 
-  
+    .contraIndicacoes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Muda para 2 colunas em telas menores */
+    }
+
 }
