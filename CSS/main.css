@@ -119,14 +119,14 @@ nav {
     background-color: #02A659;
 }
 
-.footer {
-    color: green;
-    background-color: lightgreen;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+footer {
+    display: flex;
+    color: black;
+    background-color:#02A659;
+    padding: 20px;
     margin-top: 40px;
-}
+    justify-content: space-between;
+   }
 
 
 
@@ -280,6 +280,20 @@ nav {
     .contraIndicacoes-grid {
         grid-template-columns: repeat(2, 1fr);
         /* Muda para 2 colunas em telas menores */
+    }
+    .conteudo-servico {
+        grid-template-areas:
+            "imagem"
+            "textos";
+        grid-template-columns: 1fr;
+    }
+
+    .text-box-group-servico {
+        grid-template-columns: 1fr;
+    }
+
+    .title-box-servico {
+        grid-column: 1;
     }
 
 }
