@@ -1,10 +1,15 @@
+p{
+    font-family: "Montserrat", sans-serif;
+}
 h2 {
     font-size: 40px;
-    text-align: center;
+
+    font-family: "Montserrat", sans-serif;
 }
 
 h3 {
     font-size: 30px;
+    font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -17,15 +22,18 @@ nav {
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
 }
 
 .links a {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     margin-left: 20px;
 
+}
+.links a:hover {
+    color: black;
 }
 
 .hero {
@@ -55,7 +63,7 @@ nav {
     justify-content: center;
     flex-direction: column;
     width: 278px;
-    height: 278px;
+    height: 240px;
     /* Certifique-se de que cada item ocupe todo o contêiner */
     margin-left: 20px;
     margin-right: 20px;
@@ -104,13 +112,6 @@ nav {
     right: 10px;
 }
 
-.btn {
-    border-radius: 5px;
-    background-color: burlywood;
-    color: maroon;
-    font-size: 18px;
-
-}
 
 .btn:hover {
     background-color: #02A659;
@@ -138,34 +139,33 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    margin: 2em;
+    margin: 0px 75px 0px 75px;
 }
 
 .image {
     flex: 1;
     max-width: 50%;
-    object-fit: cover;
+    object-fit: none;
 }
 
 .text-boxes {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    padding: 15px;
+    justify-content: space-around;
     margin-left: 80px;
 }
 
 .text-box {
-    background: #f0f0f0;
+    border: #124A43 solid 2px;
     border-radius: 15px;
-    margin: 15px 0;
+    margin: 15px;
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-size: 40px;
+    font-family: "Montserrat", sans-serif;
     padding: 20px;
 }
 
@@ -176,6 +176,8 @@ nav {
     grid-template-columns: 1fr 15fr 1fr 15fr;
     row-gap: 20px;
     align-items: center;
+    background-color:#124A43;
+    
 
 }
 
@@ -186,8 +188,7 @@ nav {
 
 .contra-texto {
     grid-column: span 1;
-    background: #f0f0f0;
-    border-radius: 15px;
+    color: #fff;
     padding: 10px;
     font-size: 30px
     
