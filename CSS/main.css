@@ -49,6 +49,8 @@ nav {
 }
 
 .carrossel {
+    display: grid;
+    justify-content: center;
     position: relative;
     min-height: 250px;
     min-width: 300px;
@@ -168,7 +170,18 @@ footer {
     font-family: "Montserrat", sans-serif;
     padding: 20px;
 }
-
+.text-box-index {
+    border: #124A43 solid 2px;
+    border-radius: 15px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    font-size: 40px;
+}
 /* testes de grid */
 
 .contraIndicacoes-grid {
@@ -296,7 +309,8 @@ footer {
         grid-column: 1;
     }
 
-}/* CSS PRODUTOS */ 
+}
+/* CSS PRODUTOS */ 
 
 .container-nome{
     display: flex;
