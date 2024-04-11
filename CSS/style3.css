@@ -7,19 +7,25 @@
     margin: 0;
     box-sizing: border-box;
 }
+h2 {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+    max-width: 75%;
+    
+}
 
 .nav {
-    top: 0;
-    position: sticky;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #fff;
+    z-index: 1000;
 }
 
 .links a {
@@ -29,14 +35,17 @@
 
 }
 
+
 .header img {
-    display: flex;
-    width: 1450px;
-    height: 400px;
-    align-items: center;
+    width: 100%;
+    max-height: 400px;
+    margin-top: 75px;
+
 }
 
-
+.quem-somos{
+    color: #fff;
+}
 
 .criadores h2 {
     padding: 40px;
@@ -49,22 +58,25 @@
     flex-direction: row;
     width: 50px;
     height: 50px;
-    
-    
+
+
 
 }
+
 .social-media1 img {
     flex-direction: row;
     width: 50px;
-    height: 50px; 
+    height: 50px;
 
 }
+
 .social-media2 img {
-   
+
     width: 50px;
-    height: 50px; 
+    height: 50px;
 
 }
+
 .social h3 {
     margin: 30px;
     color: white;
@@ -108,21 +120,23 @@ h1 {
 }
 
 
-.bloco1 p {
+.bloco1 {
 
     text-align: justify;
-    font-size: x-large;
-    text-indent: 20px;
-    margin: 30px;
+    font-size: large;
+    text-indent: 30px;
+    line-height: 1.4;
+    max-width: 75%;
+    margin: auto;
 
 
 }
 
 .container1,
-.container3,
-h2 {
+.container3
+{
     display: flex;
-    background-color: rgb(23, 141, 98);
+    background-color: #124A43;
 
 }
 
@@ -153,4 +167,65 @@ footer {
     padding-bottom: 20px;
     padding-left: 20px;
     margin-top: 40px;
+}
+
+.quem-somos,
+.bloco1,
+.criadores,
+.container1,
+.container2,
+.container3,
+.container4,
+footer {
+    grid-column: 2 / 3;
+}
+
+.container1,
+.container2,
+.container3,
+.container4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 75%;
+    margin: auto;
+}
+
+.social-media img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+
+@media (max-width: 768px) {
+
+    .nav,
+    .links a {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    .header img {
+        width: 100%;
+        position: static;
+        margin: 0;
+    }
+
+    .quem-somos,
+    .bloco1,
+    .criadores,
+    .container1,
+    .container2,
+    .container3,
+    .container4,
+    footer {
+        grid-column: 1;
+        max-width: 100%;
+    }
 }

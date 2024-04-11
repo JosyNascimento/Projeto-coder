@@ -25,6 +25,7 @@ nav {
     padding-bottom: 10px;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
+    z-index: 2;
 }
 
 .links a {
