@@ -1,0 +1,219 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    grid-template-columns: 1fr;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+/*Media queries*/
+@media screen and (max-width: 768px) {
+    .links {
+        display: none;
+    }
+
+}
+
+.container1 img{
+    width: 175px;
+    margin: 40px;
+    margin-right: 40px;  
+   
+}
+
+
+.container2 img {
+    width: 175px;
+    margin: 20px;
+    margin-right: 20px;
+   
+   
+}
+.container1,
+.container2 {
+    flex-direction: column;
+
+}
+
+.nome1, .nome2{  
+    text-align:  center;
+
+}
+
+
+   
+
+@media screen and (max-width: 1279px) {
+    .social-media {
+        display: inline-block;
+    }
+
+    .texto1 p, .texto2 p  {
+        flex-direction: row;
+    }
+        .container1,
+        .container2 {
+            display: flex;
+        
+        }
+    
+      
+
+}
+
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+
+
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.links a {
+    display: grid,
+        font-family: 'Roboto' sans-serif;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+
+.header img {
+    display: flex;
+    width: 100%;
+    padding: 0px 0;
+    background: url ("https://www.blog.ecosev.com.br/wp-content/uploads/2019/12/marketing-verde-green-marketing.jpg") no-repeat bottom center scroll;
+    margin-top: 75px;
+    background-size: cover;
+}
+
+
+.social-media {
+    display: inline-block;
+    background: no-repeat center;
+    background-size: cover;
+
+}
+
+
+.nome1 {
+    margin: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+.nome2 {
+    
+    margin: 20px;
+    font-size: 30px;
+    color: rgb(15, 79, 55);
+}
+
+
+.bloco1 p {
+    text-align: justify;
+    font-size: large;
+    text-indent: 20px;
+    line-height: 1.4;
+    padding: 20px;
+}
+
+.texto1 p {
+    display: flex;
+    text-align: justify;
+    font-size: large;
+    text-indent: 20px;
+    color: #fff;
+    padding: 20px
+}
+
+.texto2 p {
+    display: flex;
+    text-align: justify;
+    font-size: large;
+    text-indent: 20px;
+    color: rgb(15, 79, 55);
+    padding: 20px
+}
+
+
+#link-topo {
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(23, 141, 98);
+    padding: 10px;
+    bottom: 10px;
+}
+
+.container1 img,
+.container2 img {  
+    border-radius: 10px;
+
+}
+
+.container1 {
+    display: flex;
+    margin: 2em;
+    padding: 16px;
+    background-color: #124A43;
+}
+
+
+.container2 {
+    display: flex;
+    margin: 2em;
+    padding: 16x;
+    background-color: #fff;
+
+}
+
+.box2 {
+    display: flex;
+    margin: 2em;
+    background-color: rgb(23, 141, 98);
+}
+
+
+.social-media img {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+   
+}
+
+
+footer {
+    grid-column: 1;
+    max-width: 100%;
+    color: green;
+    background-color: rgb(23, 141, 98);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-top: 40px;
+}
