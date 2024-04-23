@@ -1,116 +1,175 @@
-*{
+* {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    }
-    
-    .nav {
-        top: 0;
-        position: sticky;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-family: 'Roboto', sans-serif;
-        font-size: 12px;
-    }
-   
-   
-    
-    header {
-        background-color: rgb(15, 79, 55);
-        width: 100%;
-        padding: 50px;
-        color: white;
-        font-size: 25px;
-    }
+}
 
-   
-        h1 {
-            color: rgb(15, 79, 55);
-            justify-content: center;
-            margin: 20px;
-            
-        }
+body {
+    background-color: #fff;
+    grid-template-columns: 1fr;
+}
 
-        h2 {
-            color: black;
-            justify-content: center;
-            margin: 20px;
-            font-size: 20px;
-        }
+#link-topo {
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(23, 141, 98);
+    padding: 10px;
+    bottom: 10px;
+}
 
-    
+.nav {
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+
+
+header {
+    background-color: rgb(15, 79, 55);
+    width: 100%;
+    padding: 50px;
+    color: white;
+    font-size: 25px;
+}
+
+
+h1 {
+    color: rgb(15, 79, 55);
+    justify-content: center;
+    margin: 20px;
+    text-align: center;
+
+
+}
+
+h2 {
+    color: black;
+    justify-content: center;
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+h3 {
+        
+    text-align: center;
+}
+ p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+
+.form {
+    margin: 70px;
+    align-items: center;
+
+}
+
+
 .box {
-    background-color:  rgb(77, 195, 151);
+    background-color: rgb(77, 195, 151);
     width: 500px;
     border-radius: 15px;
 }
-    .button-1, .button-3, .button-4 {
-        background-color:  rgb(255, 255, 255);
-        margin: 5px;
-        border-radius: 05px;
-        color: rgb(15, 79, 55);
-        font-weight: bolder;
-    }
-    .button-2 {
-        background-color:  rgb(29, 150, 106);
-        margin: 5px;
-        border-radius: 5px;
-        color: #ffffff;
+
+.button-1,
+.button-3,
+.button-4 {
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    border-radius: 05px;
+    color: rgb(15, 79, 55);
+    font-weight: bolder;
+}
+
+.button-2 {
+    background-color: rgb(29, 150, 106);
+    margin: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+
+.legend {
+    font-weight: bolder;
+    color: rgb(15, 79, 55);
+
+}
+
+.news h3 {
+    color: rgb(15, 79, 55);
+    margin: 20px;
+}
+
+.news p {
+
+    margin: 20px;
+}
+
+.dados h1 {
+    color: rgb(15, 79, 55);
+    justify-content: center;
+    margin: 30px;
+
+}
+
+#link-topo {
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(15, 79, 55);
+    padding: 10px;
+    bottom: 10px;
+}
+
+footer {
+    background-color: rgb(15, 79, 55);
+    width: 100%;
+    padding: 10px;
+}
+
+
+footer p {
+
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+/*Media queries*/
+@media screen and (max-width: 768px) {
+    .links {
+        text-align: right;
+
+
     }
 
-    .form {
-        margin: 30px;
-        
+    .title p {
+        font-size: small;
+        text-align: center;
+
     }
 
-    .legend {
-        font-weight: bolder;
-        color:  rgb(15, 79, 55);
-        
-    }
-
-    .news h3 {
-        color:  rgb(15, 79, 55);
+    .box {
+        align-items: center;
+        width: fit-content;
         margin: 20px;
-    }
-    
-    .news p {
         
-        margin: 20px;
     }
 
-    .dados h1 {
-        color: rgb(15, 79, 55);
-        justify-content: center;
-        margin: 30px;
-        
-    }
-    #link-topo {
-        display: flex;
-        justify-content: right;
-        text-decoration: none;
-        color: white;
-        background-color: rgb(15, 79, 55);
-        padding: 10px;
-        bottom: 10px;
-            }
-
-            footer {
-                background-color:  rgb(15, 79, 55);
-                width: 100%;
-                padding: 10px;
-            }
-        
-        
-            footer p{
-            
-            color: #ffffff;
-            font-size: 20px;
-            text-align: center;
-            
-            }
+  
+  
+}
