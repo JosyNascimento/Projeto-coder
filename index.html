@@ -7,7 +7,7 @@
     <meta name="description"
         content="A BioSpark é uma empresa focada em promover a sustentabilidade de sua lixeira mágica.">
     <meta name="keywords" content="sustentabilidade, mágica, reciclagem, consultoria, lixeira">
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/stylebio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -15,44 +15,67 @@
 
     <title>BioSpark</title>
 </head>
-<nav class="nav" nav id="menuMagico">
-    <div class="Logo">
-        <a href="index.html"><img src="img/Logo.png" alt="Logo" height="48px" width="48px"></a>
-    </div>
 
-    <div class="links">
-        <a href="pages/Produtos.html">Produtos</a>
-        <a href="pages/Quem-somos.html">Quem Somos</a>
-        <a href="pages/servicos.html">Serviços</a>
-        <a href="pages/Contato.html">Contato</a>
-    </div>
-    <script src="JS/main.js"></script> <!-- efeito que muda a cor do menu -->
-</nav>
 
 <body>
+    <header>
+        <div class="container-principal">
+    
+    
+    <nav class="nav">
+        
+        <div class="head">
+    
+            <img src="../img/Logo.png" alt="Logo" height="30px" width="30px"></a>
+            <a href="../index.html">BioSpark</a>
+        </div>
+    
+        <input type="checkbox" id="checkbox" class="checkbox" />
+        <label for="checkbox" class="label-menu">
+            <span class="hamburger"></span></label>
+    
+        <ul class="menu" id="menu" role="menu">
+    
+            <li><a href="../pages/Produtos.html">Home</a></li>
+            <li><a href="../pages/Produtos.html">Produtos</a></li>
+            <li><a href="../pages/Quem-somos.html">Quem Somos</a></li>
+            <li><a href="../pages/servicos.html">Serviços</a></li>
+            <li><a href="../pages/Contato.html">Contato</a></li>
+    
+    
+            <script src="../JS/main.js"></script> <!-- efeito que muda a cor do menu -->
+        </ul>
+    </nav>
+    
+    <br><br>
 
-    <h2>A REVOLUÇÃO CHEGOU <p></p>
-        <p></p>
-    </h2>
+    <h2>A REVOLUÇÃO CHEGOU </h2>
+
     <div class="hero"></div>
     <p></p>
     <div class="divisoria">
-        <div>
-            <h3>No ano de 2045, a inovação tecnológica alcançou um marco impressionante com o desenvolvimento da
+       
+            <p>No ano de 2045, a inovação tecnológica alcançou um marco impressionante com o desenvolvimento da
                 BioSpark, uma lixeira inteligente projetada para combater a poluição e promover a sustentabilidade de
                 uma
-                maneira nunca vista antes. <br> A BioSpark não é uma lixeira comum; ela é equipada com sensores
+                maneira nunca vista antes. 
+            </p> 
+                <p>
+                A BioSpark não é uma lixeira comum; ela é equipada com sensores
                 avançados, IA
                 (Inteligência Artificial) e nanotecnologia capaz de separar o lixo em várias categorias: orgânicos,
-                recicláveis, e não recicláveis.</h3>
+                recicláveis, e não recicláveis.
+            </p> 
         </div>
     </div>
 
     <div class="divisoria">
         <h2>BENEFÍCIOS DO BIOSPARK</h2>
+
         <div class="conteudo">
             <img src="img/Bin vertical redux.webp" alt="BioSpark" class="image">
-            <div class="text-boxes">
+            
+            <div class="text-box">
                 <div class="text-box-index">Separação 100% correta</div>
                 <div class="text-box-index">Gliter 100% biodegradável</div>
                 <div class="text-box-index">Muito fashion, todo mundo vai notar</div>
@@ -76,7 +99,7 @@
                                 causados pelo antigo "lixão"</p>
 
                         </div>
-                        <div class="item">
+                        <div class="carrossel">
                             <div class="carrossel-imagem">
                                 <img src="img/Cliente 2.png" alt="Cliente 2">
                                 Alex
@@ -117,10 +140,13 @@
                 <script src="JS/carrossel.js"></script>
 
         </section>
-    <footer>
-        <div>BioSpark - 2024 </div>
-        <div class="links"><a id="link-topo" href="#">&#9650;Ir ao topo</a></div>
-    </footer>
+    
+        <footer class="rodapé">
+            <p style="color:#FFFFFF">SustentAção - 2024</p>
+            <div class="topo">
+                <a href="#">&#9650;Ir ao topo</a>
+            </div>
+        </footer>
 </body>
 
 </html>

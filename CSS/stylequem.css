@@ -1,11 +1,19 @@
 :root {
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    --background-color: rgb(23, 141, 98);
+    --background-color: #fff;
+    --royal-green-light: #00FA9A;
+    --royal-green-dark: #2E8B57;
+
+
 }
 
 body {
     background-color: #fff;
     grid-template-columns: 1fr;
 }
+
 
 * {
     padding: 0;
@@ -16,119 +24,207 @@ body {
 
 
 /*Media queries*/
-@media screen and (max-width: 768px) {
-    .links {
-        text-align: right;
-  }      
+@media (max-width: 768px) {
+    
+
+    .menu {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 2rem;
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        background-color: rgb(10, 75, 51);
+       
+
+    }
+
+    .menu a {
+        padding: 0.5rem 0;
+        margin-inline: 1rem;
+        border-bottom: solid rgba (0, 0, 0, 0.16);
+    }
+
+
+    .label-menu {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #fff;
+        padding-block: 1rem;
+        cursor: pointer;
+    }
 
 
 
-.container1 img{
+
+
+    .hamburger {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+        margin: 1rem;
+    }
+
+
+    .hamburger::before,
+    .hamburger::after {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .checkbox:checked~.menu {
+        display: block;
+        height: calc(55vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .checkbox:checked~.label-menu .hamburger {
+        border-top-color: transparent;
+    }
+
+    .checkbox:checked~.label-menu .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .checkbox:checked~.label-menu .hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+}
+
+
+/*desktop*/
+.container1 img {
+    display: flex;
     width: 175px;
     margin: 40px;
-    margin-right: 40px;  
-   
+    margin-right: 40px;
+
 }
 
 
-.container2 img {
-    width: 175px;
-    margin: 20px;
-    margin-right: 20px;
-   
-   
-}
-.container1,
-.container2 {
+
+.container1 {
     flex-direction: column;
-    display: inline-flexbox;
-
-}
-
-}
-
-@media (max-width: 320px) { /* styles for viewports <= 320px */ }
-   
-
-@media screen and (max-width: 1279px) {
-    .social-media {
-        display: inline-block;
-    }
-
-    .texto1 p, .texto2 p  {
-        flex-direction: row;
-    }
-        .container1,
-        .container2 {
-            display: flex;
-        
-        }
-    
-      
-    }
-
-
-
-h1 {
-    font-size: 40px;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    margin: auto;
-
-
-
+    border-radius: 10px;
+    display: flex;
+    margin: 0.5rem;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 0.699) 0%, rgba(253, 29, 29, 0.658) 50%, rgba(252, 176, 69, 0.753) 100%);
+    align-items: center;
+    margin: 4rem;
 }
 
 .nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 10px 20px;
-    background-color: #fff;
-    z-index: 1000;
+    background-color: rgb(23, 141, 98);
+    justify-content: space-between;
+    height: 2rem;
 }
 
-.links a {
-    font-family: 'Roboto' sans-serif;
-    font-size: 18px;
-    margin-right: 40px ;
-    
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
 }
 
+.menu a {
+    display: block;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 0.5rem;
+}
+
+
+.menu a:hover {
+    color: rgb(255, 175, 2);
+
+}
+
+
+
+.labl-menu, .checkbox {
+    display: none;
+
+}
+
+/*menu nav*/
+
+
+
+
+.head a {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    padding-top: 0.5rem;
+
+}
+
+.head {
+    display: flex;   
+    top: 0.5rem;
+    width: 100%;
+ 
+}
 
 .header img {
     display: flex;
     width: 100%;
-    padding: 0px 0;
+    height: 300px;
     background: url ("https://www.blog.ecosev.com.br/wp-content/uploads/2019/12/marketing-verde-green-marketing.jpg") no-repeat bottom center scroll;
-    margin-top: 75px;
-    background-size: cover;
+   
+
+}
+
+.header  h1 {
+    display: grid;
+    font-size: 20px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 2rem;
+    margin: 1rem;
+    color: #c47106;
+
 }
 
 
-.social-media {  
+
+.social-media {
     display: inline-table;
     align-items: center;
-      
-    
+
+
 
 }
 
 
 .nome1 {
-    
+
     color: white;
     font-size: 30px;
     margin: 40px;
     margin-left: 40px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    
-    
-    
+
+
+
 }
 
 .nome2 {
@@ -146,6 +242,25 @@ h1 {
     text-indent: 20px;
     line-height: 1.4;
     padding: 20px;
+    padding-top: 0rem;
+}
+
+
+
+.text-boxes-servico {
+    grid-area: textos;
+    display: grid;
+    grid-auto-rows: auto;
+    gap: 20px;
+}
+
+.text-box-group-servico {
+    display: grid;
+    grid-template-rows: auto;
+  Título 
+    grid-template-columns: 1fr 1fr;
+    Duas colunas para as caixas de texto 
+    gap: 10px;
 }
 
 .texto1 p {
@@ -158,7 +273,7 @@ h1 {
 }
 
 .texto2 p {
-    
+
     text-align: justify;
     font-size: large;
     text-indent: 20px;
@@ -167,41 +282,18 @@ h1 {
 }
 
 
-#link-topo {
-    display: flex;
-    justify-content: right;
-    text-decoration: none;
-    color: white;
-    background-color: rgb(23, 141, 98);
-    padding: 10px;
-    bottom: 10px;
-}
-
-.container1 img,
-.container2 img {  
-    border-radius: 10px;
-
-}
-
-.container1 {
-    display: flex;
-    margin: 2em;
-    background-color: #124A43;
-    align-items: center;
-}
-
-
+/*
 .container2 {
-    display: flex;
-    margin: 2em;
+    border-radius: 10px;
+    display: flex;   
     background-color: #fff;
     align-items: center;
+    margin: 0.5rem;
 
-}
+}*/
 
-.box2 {
-    display: flex;
-    margin: 2em;
+.box {
+    display: flex;   
     background-color: rgb(23, 141, 98);
     align-items: center;
 }
@@ -212,18 +304,151 @@ h1 {
     width: 50px;
     height: 50px;
     margin: 20px;
-    align-items: center;
+    
 
-   
+
 }
 
 
 footer {
-display: grid;
-    max-width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 2rem;
     background-color: rgb(23, 141, 98);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+   
 }
+
+.topo a {
+    color: #fff;
+    text-decoration: none;
+    padding-top: 0.5rem;
+    margin: 1rem;
+}
+.topo a:hover {
+    color: rgb(255, 175, 2);
+   
+}
+
+/* </div>
+        </div>
+       
+            <div class="container2">
+                <div>
+                    <img src="../img/Victória.jpg" alt="Victória">
+                </div>
+
+                <div>
+                    <div class="social">
+                        <p class="nome2">Victória Calicchio</nome2>
+
+                        <section class="texto2">
+                            <p>
+                               Sou  designer gráfica, e estou muito animada em fazer parte deste projeto
+                                incrível que desenvolvemos: a Lixeira Mágica!
+                                mergulhei de cabeça nessa jornada porque acredito
+                                no poder da inovação e da sustentabilidade.
+                                Como designer gráfica, contribuí para tornar o projeto ainda mais cativante.
+                                Junte-se a nós para tornar o mundo mais limpo e sustentável. Cada gesto de reutilização
+                                faz a
+                                diferença. Venha conhecer a Lixeira Mágica e faça parte dessa mudança!
+                            </p>
+                            <br><br><br>
+                        </section>
+                        <div class="social-media">
+                            <a href="https://github.com/VCalicchio" target="_blank" rel="noopener noreferrer">
+                                <img src="../img/github_PNG87.webp" alt="Github" title="Github"></img>
+                            </a>
+                        </div>
+
+                        <div class="social-media">
+                            <a href="https://www.linkedin.com/in/victoria-c-8676a3136/" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="../img/Linkedin2.webp" title="Linkedin" alt="Linkedin"></img>
+                            </a>
+   
+
+        </div>
+        </div>
+
+        </div>
+
+        </div>
+       
+        <div class="container1">
+            
+            <div>
+                <img src="../img/Gustavo.jpg" alt="Gustavo Ferracioli">
+            </div>
+
+            <div class="social">
+                <p class="nome1">Gustavo Ferracioli</nome1>
+
+                <section class="texto1">
+                    <p>
+                        Eu sou Gustavo e estou muito feliz por fazer parte da BioSpark, minha função aqui na empresa é
+                        levar
+                        o
+                        café quentinho para
+                        que essas mentes brinlhantes possam funcionar. Eu também sou responsável por ter certeza que as
+                        lixeiras
+                        estão vazias
+                        quando o dia começa e comprar o lanche na rua quando eles não gostam do que eu preparei para o
+                        coffee
+                        break.
+                    </p>
+                    <br><br><br>
+                </section>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/gustavo-ferracioli/" target="_blank" rel="noopener noreferrer">
+                        <img src="../img/Linkedin2.webp" title="Linkedin" alt="Linkedin"></img>
+                    </a>
+                </div>
+
+                <div class="social-media">
+                    <a href="https://github.com/Gferracioli" target="_blank" rel="noopener noreferrer">
+                        <img src="../img/github2.webp" alt="Github" title="Github"></img>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+        </div>
+        
+            <div class="container2">
+                <div>
+                    <img src="../img/joao_vitor.webp" alt="João Victor" width="350">
+                </div>
+
+                <div class="social">
+                    <p class="nome2">João Victor</nome2>
+                    <section class="texto2">
+                        <p>
+                            Sou responsável por toda a parte comercial e de atendimento ao cliente. Faço o que
+                            for possível para que a mágica atenda a sua necessidade
+                            de transformação na gestão de resíduos.
+                        </p>
+                        <br><br><br>
+                        <div class="social-media">
+                            <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-dos-santos-severo-ab18bb28a/"
+                                target="_blank" rel="noopener noreferrer">
+                                <img src="../img/Linkedin2.webp" title="Linkedin" alt="Linkedin"></img>
+                            </a>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://github.com/joao-vitor19" target="_blank" rel="noopener noreferrer">
+                                <img src="../img/github_PNG87.webp" alt="Github" title="Github"></img>
+                            </a>
+                        </div>
+       
+    </fieldset>
+        </div>
+        </div>
+        </div>
+    </asaid>

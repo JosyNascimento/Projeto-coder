@@ -1,0 +1,483 @@
+:root {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    --background-color: rgb(23, 141, 98);
+    --background-color: #fff;
+    --royal-green-light: #00FA9A;
+    --royal-green-dark: #2E8B57;
+
+
+}
+
+body {
+
+    grid-template-columns: 1fr;
+    background-color: #fff;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+/*Media queries*/
+
+@media (max-width: 768px) {
+    
+.container-lixeira {
+    display: grid;
+    width: auto;
+ 
+
+}
+
+.lixeira img{   
+    width: auto;
+    display: inline-block;
+
+}
+
+.texto p {   
+    font-size: small;
+    width: auto;
+    display: inline-block;
+   
+}
+.menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    text-align: center;
+    width: 100%;
+    height: 0;
+    z-index: 1;
+    visibility: hidden;
+    overflow-y: hidden;
+    background-color: rgb(10, 75, 51);
+   
+
+}
+
+    .menu a {
+        padding: 0.5rem 0;
+        margin-inline: 1rem;
+        border-bottom: solid rgba (0, 0, 0, 0.16);
+    }
+
+
+    .label-menu {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #fff;
+        padding-block: 1rem;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+        margin: 1rem;
+    }
+
+
+    .hamburger::before,
+    .hamburger::after {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .checkbox:checked~ .menu {
+        display: block;
+        height: calc(55vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .checkbox:checked~.label-menu .hamburger {
+        border-top-color: transparent;
+    }
+
+    .checkbox:checked~.label-menu .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .checkbox:checked~.label-menu .hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+}
+
+/*menu nav*/
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(23, 141, 98);
+    justify-content: space-between;
+    height: 2rem;
+}
+
+
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu a {
+    display: block;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 0.5rem;
+}
+
+.menu a:hover {
+    color: chocolate;
+
+}
+
+
+
+.labl-menu, .checkbox {
+    display: none;
+
+}
+
+
+.head a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+
+.head {
+    display: flex;
+    top: 0.5rem;
+    width: 100%;
+
+}
+
+/*main lixeira magica*/
+
+.container1 {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.container-lixeira {
+    display: flex;
+ 
+
+}
+
+.lixeira img{
+    display: inline-block;
+    width: 400px;
+    border-radius: 15px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-right: 1rem;
+   
+
+}
+
+.texto p {
+    display: inline-block;
+    text-align: justify;
+    font-size: large;
+    font-family: "Montserrat", sans-serif;
+    text-indent: 20px;
+    line-height: 1.4;
+    padding: 10px;
+    padding-top: 2rem;
+   
+   
+   
+}
+
+.título h1 {
+    font-size: 40px;
+    text-align: center;
+    color: chocolate;
+  
+
+}
+
+
+
+.child-img img {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 100%;
+    border-radius: 20px;
+    margin-right: 2rem;
+
+}
+
+
+.item {
+    width: 300px;
+    height: 700px;
+    background-color: rgba(127, 255, 212, 0.404);
+    border: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.h3 h3 {
+    font-size: x-large;
+    font-family: "Montserrat", sans-serif;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    color: #124A43;
+
+}
+
+
+
+
+
+/*Asaid
+COMO O PRODUTO AGREGA NA SUA VIDA E NO MEIO AMBIENTE*/
+
+.divisoria h1,
+h2 {
+    margin: 4rem;
+    font-size: x-large;
+    text-align: center
+}
+
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+}
+
+.conteudo img {
+    width: 500px;
+    border-radius: 30px;
+    padding: 1rem;
+
+}
+
+
+
+.text-box {
+    display: grid;
+    align-items: center;
+    grid-auto-rows: auto;
+    border: #124A43 solid 2px;
+    border-radius: 15px;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+
+
+}
+
+
+
+
+
+
+/* main RELATOS DE QUEM JÁ FAZ PARTE DO FUTURO*/
+
+/*main LIXEIRA MÁGICA*/
+.contra-texto {
+    padding-top: 1rem;
+    text-align: justify;
+    background-color: #0b4942;
+    font-size: large;
+    text-indent: 20px;
+    line-height: 1.4;
+    padding: 20px;
+    padding-top: 1rem;
+    color: #fff;
+    margin: 1rem;
+    border-radius: 15px;
+
+}
+
+
+
+.contra-texto h1 {
+    text-align: center;
+    font-size: large;
+}
+
+/*asaid*/
+.instrucao-grid {
+    margin: 1rem;
+    display: grid;
+    text-indent: 20px;
+    text-align: justify;
+    grid-template-rows: 1fr;
+    align-items: center;
+    row-gap: 10px;
+
+}
+
+.instrucao-texto {
+    grid-column: span 1;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 0.747) 0%, rgba(253, 29, 29, 0.582) 50%, rgba(252, 176, 69, 0.541) 100%);
+    border-radius: 15px;
+    padding: 10px;
+    font-size: large;
+}
+
+
+.container-nome {
+    display: flex;
+    padding-left: 1%;
+
+}
+
+.child-text {
+    padding: 2%;
+    margin-top: 3%;
+}
+
+.container-img {
+    display: flex;
+}
+
+/*RELATOS DE QUEM JÁ FAZ PARTE DO FUTURO*/
+
+.carrossel {
+    display: grid;
+    justify-content: center;
+    position: relative;
+    margin: 1rem;
+    overflow: auto;
+    background-color: #267a71a9;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.carrossel-items .clientes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 150px;
+    height: 240px;
+
+    /* Certifique-se de que cada item ocupe todo o contêiner */
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    border: solid 2px green;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 15px;
+
+}
+
+.carrossel-items {
+    display: flex;
+    font-size: small;
+}
+
+.carrossel-imagem {
+    background-color: white;
+    /* A aura branca */
+    display: inline-block;
+
+}
+
+.carrossel-imagem img {
+    border-radius: 80%;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 0.699) 0%, rgba(253, 29, 29, 0.658) 50%, rgba(252, 176, 69, 0.753) 100%);
+    /* A magia que cria o círculo */
+}
+
+
+.feedback-clientes {
+    background-color: #124A43;
+}
+
+.feedback-clientes h1 {
+    color: #fff;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.anterior,
+.proximo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.anterior {
+    left: 10px;
+}
+
+.proximo {
+    right: 10px;
+}
+
+
+
+
+.rodapé {
+    display: flex;  
+    justify-content: space-between;  
+    background-color: rgb(23, 141, 98);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    
+
+}
+
+#topo {
+    display: flex;   
+    text-decoration: none;
+    color: white;
+    background-color: rgb(23, 141, 98);
+    padding: 10px;
+    bottom: 10px;
+    padding-right: 1rem;
+}
+
+
+.topo a:hover {
+    color: rgb(255, 175, 2);
+}
+
+.topo a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 1rem;
+}
