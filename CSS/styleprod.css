@@ -24,44 +24,27 @@ body {
 }
 
 
+
 /*Media queries*/
-
 @media (max-width: 768px) {
-    
-.container-lixeira {
-    display: grid;
-    width: auto;
- 
 
-}
 
-.lixeira img{   
-    width: auto;
-    display: inline-block;
+    .menu {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 2rem;
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        background-color: rgb(10, 75, 51);
+       
 
-}
+    }
 
-.texto p {   
-    font-size: small;
-    width: auto;
-    display: inline-block;
-   
-}
-.menu {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 2rem;
-    text-align: center;
-    width: 100%;
-    height: 0;
-    z-index: 1;
-    visibility: hidden;
-    overflow-y: hidden;
-    background-color: rgb(10, 75, 51);
-   
-
-}
 
     .menu a {
         padding: 0.5rem 0;
@@ -78,6 +61,8 @@ body {
         padding-block: 1rem;
         cursor: pointer;
     }
+
+
 
     .hamburger {
         border-top: 0.125rem solid;
@@ -98,7 +83,7 @@ body {
         transition: 0.3s;
     }
 
-    .checkbox:checked~ .menu {
+    .checkbox:checked~.menu {
         display: block;
         height: calc(55vh - 4.6875rem);
         visibility: visible;
@@ -119,7 +104,6 @@ body {
     }
 }
 
-/*menu nav*/
 .nav {
     display: flex;
     position: fixed;
@@ -129,9 +113,6 @@ body {
     justify-content: space-between;
     height: 2rem;
 }
-
-
-
 
 .menu {
     list-style: none;
@@ -146,35 +127,31 @@ body {
     text-decoration: none;
     color: #fff;
     padding-bottom: 0.5rem;
+    padding-block: 0.5rem;
 }
+
 
 .menu a:hover {
-    color: chocolate;
+    color: rgb(255, 175, 2);
 
 }
 
 
-
-.labl-menu, .checkbox {
+.labrl-menu,
+.checkbox {
     display: none;
 
 }
 
-
 .head a {
     color: #fff;
     text-decoration: none;
+    padding-block: 0.5rem;
+   
 
 }
 
 
-
-.head {
-    display: flex;
-    top: 0.5rem;
-    width: 100%;
-
-}
 
 /*main lixeira magica*/
 
