@@ -28,6 +28,42 @@ body {
 /*Media queries*/
 @media (max-width: 768px) {
 
+   .container-lixeira img {
+    display: inline-block;
+        max-width: 220px;
+        border-radius: 30px;
+        
+   }
+   .texto p {
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    
+    
+
+   }
+
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        max-width: 220px;
+    }
+    
+    .conteudo img {
+        display: flex;
+        flex-direction: column;
+        max-width: 220px;
+        border-radius: 30px;
+        
+    
+    }
+
+    .container-img {
+            width: 85px;
+            flex-direction: column;
+            max-width: 300px;
+            padding-left: 1rem;
+    }
 
     .menu {
         display: block;
@@ -345,6 +381,7 @@ h2 {
 
 .container-img {
     display: flex;
+    width: 875px;
 }
 
 /*RELATOS DE QUEM JÁ FAZ PARTE DO FUTURO*/
