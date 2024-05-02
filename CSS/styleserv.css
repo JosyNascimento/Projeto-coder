@@ -214,14 +214,13 @@ h2 {
 }
 .text-box {
 
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    display: inline-block;   
+    text-align: justify;   
     font-size: small;
     font-family: "Montserrat", sans-serif;
     padding: 20px;
     margin: 0.5rem;
+    font-size: xx-large;
 }
 
 

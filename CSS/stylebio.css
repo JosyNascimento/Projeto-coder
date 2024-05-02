@@ -163,13 +163,27 @@ body {
 
 }
 
-h2 {
+h1 {
     text-align: center;
     padding-block: 2rem;
     color: rgb(255, 175, 2);
+    font-size: xxx-large;
 }
 
+.divisoria {
+    margin: 2rem;
+    text-indent: 20px;
+    text-align: justify;
+    text-size-adjust: ;
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: xx-large;
+    line-height: 1.4;
+  
 
+}
 
 .hero {
     height: 600px;
@@ -179,6 +193,27 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
   
+}
+
+.text-boxes {
+    display: grid;
+    grid-auto-rows: auto;
+    gap: 20px;
+
+}
+
+
+.text-box-index {
+    border: #124A43 solid 2px;
+    border-radius: 15px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    font-size: 40px;
 }
 .contra-texto {
     padding-top: 1rem;
@@ -238,39 +273,73 @@ h2 {
     display: flex;
 }
 
-/*RELATOS DE QUEM JÁ FAZ PARTE DO FUTURO*/
 
-.conteudo img {
-    width: 600px;
-    height: 800px;
-    border-radius: 15px;
+
+
+.rodapé {
+    display: flex;  
+    justify-content: space-between;  
+    background-color: rgb(23, 141, 98);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    
+
 }
+
+#topo {
+    display: flex;   
+    text-decoration: none;
+    color: white;
+    background-color: rgb(23, 141, 98);
+    padding: 10px;
+    bottom: 10px;
+    padding-right: 1rem;
+}
+
+
+.topo a:hover {
+    color: rgb(255, 175, 2);
+}
+
+.topo a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 1rem;
+}
+
+
 .carrossel {
-    display: grid;
-    width: 850px;
-height: 300px;
+    display: grid;   
+    height: 400px;
     justify-content: center;
     position: relative;
-    margin: 1rem;
+    margin: 2rem;
     overflow: auto;
     background-color: #267a71a9;
     padding: 10px;
     border-radius: 15px;
 }
 
-.carrossel-items  {
+.carrossel-items .clientes {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 0px;
-    height: 0px;
+    width: 200px;
+    height: 300px;
+    margin: 2rem;
+
+    /* Certifique-se de que cada item ocupe todo o contêiner */
     margin-left: 2rem;
     margin-right: 2rem;
+    text-align: center;
     border: solid 2px green;
     border-radius: 15px;
     background-color: #fff;
     padding: 15px;
+    width: 300px;
+    height: 300px;
 
 }
 
@@ -280,95 +349,40 @@ height: 300px;
 }
 
 .carrossel-imagem {
-    width: 100px;
-    display: inline-block;
     background-color: white;
-    padding-block: 1rem;
- margin: 1rem;   
-    border-radius: 15px;
-    align-items: center;
-
-    
+    /* A aura branca */
+    display: inline-block;
+    width: 100px;
 
 }
-.carrossel-items .item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 278px;
-    height: 240px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-    border: solid 2px green;
-    border-radius: 8px;
-    background-color: #fff;
-    padding: 15px;
-}
+
 .carrossel-imagem img {
-    border-radius: 100%;
+    border-radius: 80%;
+    width: 100%;
+   
+
     background: linear-gradient(90deg, rgba(131, 58, 180, 0.699) 0%, rgba(253, 29, 29, 0.658) 50%, rgba(252, 176, 69, 0.753) 100%);
     /* A magia que cria o círculo */
 }
 
 
+.feedback-clientes {
+    background-color: #124A43;
+}
 
-p {
-    color: black;
+.feedback-clientes h1 {
+    color: #fff;
     padding-left: 1%;
     padding-top: 1%;
-
 }
-
-.anterior,
-.proximo {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-
-.anterior {
-    left: 10px;
-}
-
-.proximo {
-    right: 10px;
-}
-
-
-.btn:hover {
-    background-color: #02A659;
-}
-
-
-.text-box-index {
-    grid-area: textos;
-    font-size: large;
-    display: grid;
-    grid-auto-rows: auto;
-    gap: 20px;
-}
-
-
-
-.divisoria p{
+.conteudo img{
+    border-radius: 50px;
+    width: 80%;
+    align-items: center;
+    margin: 4rem;
     padding-block: 2rem;
-    font-size: x-large;
-    justify-content: center;
-    text-align: justify;
-    margin: 1rem;
-    text-indent: 20px;
-
 }
 
-.conteudo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;  
-    justify-content: center;
-    margin: 0px 75px;
-}
 
 
 
@@ -386,24 +400,4 @@ p {
     font-size: large;
 }
 
-.footer {
-    display: flex;  
-    justify-content: space-between;  
-    background-color: rgb(23, 141, 98);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    
-
-}
-
-.topo a:hover {
-    color: rgb(255, 175, 2);
-}
-
-.topo a {
-    color: #fff;
-    text-decoration: none;
-    padding-right: 1rem;
-}
 

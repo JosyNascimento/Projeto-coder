@@ -24,9 +24,15 @@ body {
 
 
 
+
 /*Media queries*/
 @media (max-width: 768px) {
-
+    .card img {
+       
+       
+    }
+    
+   
 
     .menu {
         display: block;
@@ -40,7 +46,7 @@ body {
         visibility: hidden;
         overflow-y: hidden;
         background-color: rgb(10, 75, 51);
-       
+
 
     }
 
@@ -49,7 +55,7 @@ body {
         padding: 0.5rem 0;
         margin-inline: 1rem;
         border-bottom: solid rgba (0, 0, 0, 0.16);
-        
+
     }
 
 
@@ -147,7 +153,7 @@ body {
     color: #fff;
     text-decoration: none;
     padding-block: 0.5rem;
-   
+
 
 }
 
@@ -158,24 +164,25 @@ body {
     width: 100%;
     height: 500px;
     background-image: url ("https://imgs.search.brave.com/ztcgqNodTylF8DPRPafI8KZdqcnBeOR0sI574oV6hkU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU3/NzM0MjQ0L3B0L2Zv/dG8vbWFyaW5hLWJh/eS1zYW5kcy1lbS1z/aW5nYXB1cmEtJUMz/JUEwLW5vaXRlLW4l/QzMlQTlvbi1sdXot/bGFzZXItbW9zdHJh/ci5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9Vk9xdzlXb21O/aWV6SWtFb283VzNl/YjhJOURFQkJGRzdT/OHdUUXFxeXlRND0");
-   
+
 
 }
 
 
 .natureza img {
-    display: flex;    
-    height: 300px; 
-    width: 850px; 
-  margin: 2rem;
-  border-radius: 15px;
-    
-   
+    display: inline-flex;
+    justify-items: center;
+    height: 300px;
+    width: 80%;
+    margin: 2rem;
+    border-radius: 15px;
+
+
 
 }
 
 
-.header  h1 {
+.header h1 {
     display: grid;
     font-size: 20px;
     text-align: left;
@@ -190,16 +197,14 @@ body {
 
 
 
-.nome1 {
+.nome1 h1 {
 
-    color: white;
-    font-size: 30px;
-  margin: 40px;
-  
+    color: rgb(98, 28, 211);
+    font-size: x-large;
+   padding: 0.5rem;
     font-family: "Montserrat", sans-serif;
-
-
-
+    text-align: center;
+    padding-block: 2rem;
 }
 
 
@@ -209,47 +214,44 @@ body {
     text-indent: 20px;
     line-height: 1.4;
     padding: 20px;
-   
+
 }
 
 /*desktop*/
-.card img {   
-    width: 200px;
-    margin: 40px;   
+.card img {
+    width: 100px;
+    margin: 10px;
     border-radius: 15px;
-    
+}
+
+.texto1 p {
+    display: flex;
+    text-align: justify;
+    text-indent: 20px;
+    color: #fff;
+    margin: 2rem;
 
 }
 
 
-
-.container1 {   
-    margin: 4rem;
-}
 
 
 .card {
     background: linear-gradient(90deg, rgba(131, 58, 180, 0.699) 0%, rgba(253, 29, 29, 0.658) 50%, rgba(252, 176, 69, 0.753) 100%);
     display: flex;
-align-items: center;
+    align-items: center;
     border: solid var(--royal-green-dark);
-    width: 800px;
-    height: 450px;
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
-
-}
-
-
-.texto1 p {
-    
-    display: flex;
-    text-align: justify;   
-    text-indent: 20px;
-    color: #fff;
+   margin-bottom: 1rem;
    
-    margin-right: 2rem;
-    
+ 
+
 }
+
+
+
 
 .texto2 p {
 
@@ -266,9 +268,34 @@ align-items: center;
     height: 50px;
     border-radius: 15px;
     align-items: center;
-   
-    
+
+
 }
+
+.sledeshow{
+  
+} 
+
+.navegation {
+    display: flex;
+   
+    bottom: 20px;
+    left: 50px;
+    transform: translate(-50%);
+
+}
+
+    .bar {
+        width: 70px;
+        height: 17px;
+        border: 2px solid #fff;
+        margin: 6px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+/*slides
+.contant
 
 
 /*cards
@@ -522,11 +549,11 @@ footer {
     justify-content: space-between;
     width: 100%;
     height: 2rem;
-    background-color: rgb(23, 141, 98);   
+    background-color: rgb(23, 141, 98);
     padding-top: 10px;
     padding-bottom: 10px;
 
-   
+
 }
 
 .topo a {
@@ -535,9 +562,10 @@ footer {
     padding-top: 0.5rem;
     margin: 1rem;
 }
+
 .topo a:hover {
     color: rgb(255, 175, 2);
-   
+
 }
 
 /* 
